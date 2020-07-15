@@ -1,9 +1,22 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #4d4d4d;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ol {
+    padding: 0;
+    list-style-type: upper-roman;
+}
+
 h1 {
     text-align: center;
     color: #4d4d4d;
     font-size: 32px;
     padding: 15px 0 20px 0;
-    font-family: Tahoma, Geneva, sans-serif;
 }
 
 h3 {
@@ -16,7 +29,6 @@ h3 {
 .burger-form {
     width: 300px;
     margin: 0 auto;
-    font-family: Tahoma, Geneva, sans-serif;
 }
 
 .burger-form input[type="text"] {
@@ -38,26 +50,44 @@ h3 {
     color: #ffffff;
 }
 
+button {
+    padding: 8px;
+    background-color: #535b63;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+
 .display {
     width: 625px;
     margin: 0 auto;
-    font-family: Tahoma, Geneva, sans-serif;
     display: flex;
     justify-content: space-between;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: space-around;
 }
 
 .not-eaten {
     width:45%;
     /* display: inline-block; */
     box-sizing: border-box;
-    background-color: aqua;
-    border: 1px black solid;
+    border: 1px solid #dddddd;
+    counter-reset: section;
+}
+
+.list-one::before {
+    counter-increment: section;
+    content: counter(section) ". ";
 }
 
 .eaten {
     width:45%;
     /* display: inline-block; */
     box-sizing: border-box;
-    background-color: pink;
-    border: 1px black solid;
+    border: 1px solid #dddddd;
 }

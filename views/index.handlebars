@@ -2,16 +2,18 @@
 <div class="display">
 
     <div class="not-eaten">
-        <ul>
+        <ol>
             {{#each burgers}}
-            <li>
-                {{burger_name}}
-            </li>
-                {{!-- {{#unless sleepy}}
-                    {{> cats/cat-block sleep=true}}
-                {{/unless}} --}}
+                {{#unless devoured}}
+                    <li class="flex-item list-one">
+                        {{burger_name}}
+                        <button class="devour" data-id="{{id}}" data-devoured="{{devoured}}">
+                            Devour
+                        </button>
+                    </li>
+                {{/unless}}
             {{/each}}
-        </ul>
+        </ol>
     </div>
 
     <div class="eaten">
