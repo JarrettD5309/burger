@@ -1,3 +1,25 @@
+<h1>Burger Log</h1>
+<div class="display">
+
+    <div class="not-eaten">
+        <ul>
+            {{#each burgers}}
+            <li>
+                {{burger_name}}
+            </li>
+                {{!-- {{#unless sleepy}}
+                    {{> cats/cat-block sleep=true}}
+                {{/unless}} --}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="eaten">
+        <p>test</p>
+    </div>
+
+</div>
+
 <div class="burger-form">
     <h3>Enter a Burger</h3>
     <form action="auth" method="POST">

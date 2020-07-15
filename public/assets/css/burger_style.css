@@ -1,14 +1,22 @@
-.burger-form {
-    width: 300px;
-    margin: 0 auto;
+h1 {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 32px;
+    padding: 15px 0 20px 0;
     font-family: Tahoma, Geneva, sans-serif;
 }
 
-.burger-form h3 {
+h3 {
     text-align: center;
     color: #4d4d4d;
     font-size: 20px;
     padding: 20px 0 20px 0;
+}
+
+.burger-form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 .burger-form input[type="text"] {
@@ -28,4 +36,28 @@
     cursor: pointer;
     font-weight: bold;
     color: #ffffff;
+}
+
+.display {
+    width: 625px;
+    margin: 0 auto;
+    font-family: Tahoma, Geneva, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.not-eaten {
+    width:45%;
+    /* display: inline-block; */
+    box-sizing: border-box;
+    background-color: aqua;
+    border: 1px black solid;
+}
+
+.eaten {
+    width:45%;
+    /* display: inline-block; */
+    box-sizing: border-box;
+    background-color: pink;
+    border: 1px black solid;
 }
