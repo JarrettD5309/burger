@@ -17,7 +17,15 @@
     </div>
 
     <div class="eaten">
-        <p>test</p>
+        <ol>
+            {{#each burgers}}
+                {{#if devoured}}
+                    <li class="flex-item list-two">
+                        {{burger_name}}
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ol>
     </div>
 
 </div>
