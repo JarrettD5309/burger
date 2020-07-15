@@ -22,6 +22,9 @@
                 {{#if devoured}}
                     <li class="flex-item list-two">
                         {{burger_name}}
+                        <button class="undevour" data-id="{{id}}" data-devoured="{{devoured}}">
+                            Add to List
+                        </button>
                     </li>
                 {{/if}}
             {{/each}}
@@ -32,8 +35,8 @@
 
 <div class="burger-form">
     <h3>Enter a Burger</h3>
-    <form action="auth" method="POST">
-        <input type="text" name="burgerName" placeholder="Burger Name" required>
-        <input type="submit">
+    <form>
+        <input type="text" id="burger_name" name="burger_name" placeholder="Burger Name" required>
+        <button type="submit">Submit</button>
     </form>
 </div>
