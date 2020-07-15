@@ -2,6 +2,7 @@
 <div class="display">
 
     <div class="not-eaten">
+        <h3>Burger List</h3>
         <ol>
             {{#each burgers}}
                 {{#unless devoured}}
@@ -17,6 +18,7 @@
     </div>
 
     <div class="eaten">
+        <h3>Eaten List</h3>
         <ol>
             {{#each burgers}}
                 {{#if devoured}}

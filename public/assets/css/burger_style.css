@@ -26,6 +26,10 @@ h3 {
     padding: 20px 0 20px 0;
 }
 
+.display h3 {
+    padding: 0;
+}
+
 .burger-form {
     width: 300px;
     margin: 0 auto;
@@ -86,7 +90,8 @@ button {
 }
 
 .eaten {
-    width:45%;
+    width:300px;
+    
     /* display: inline-block; */
     box-sizing: border-box;
     border: 1px solid #dddddd;
@@ -96,4 +101,30 @@ button {
 .list-two::before {
     counter-increment: section-two;
     content: counter(section-two) ". ";
+}
+
+@media screen and (max-width:700px) {
+
+    .display {
+        flex-direction: column;
+    }
+
+    .eaten {
+        width:300px;
+        margin: 20px auto 0 auto;
+        /* display: inline-block; */
+        box-sizing: border-box;
+        border: 1px solid #dddddd;
+        counter-reset: section-two;
+    }
+
+    .not-eaten {
+        width:300px;
+        /* display: inline-block; */
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 1px solid #dddddd;
+        counter-reset: section;
+    }
+
 }
