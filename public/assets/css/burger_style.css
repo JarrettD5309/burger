@@ -61,6 +61,7 @@ h3 {
     cursor: pointer;
     font-weight: bold;
     color: #ffffff;
+    height: auto;
 }
 
 button {
