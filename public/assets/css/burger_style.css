@@ -14,7 +14,7 @@ ol {
 
 h1 {
     text-align: center;
-    color: black;
+    color: #4d4d4d;
     font-size: 32px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -33,6 +33,10 @@ h3 {
 .burger-svg {
     width: 100px;
     margin: 10px auto;
+}
+
+.burger-img {
+    filter: invert(28%) sepia(15%) saturate(7%) hue-rotate(327deg) brightness(95%) contrast(89%);;
 }
 
 .burger-form {
