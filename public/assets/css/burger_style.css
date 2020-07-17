@@ -16,18 +16,23 @@ h1 {
     text-align: center;
     color: #4d4d4d;
     font-size: 32px;
-    padding: 15px 0 20px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h3 {
     text-align: center;
     color: #4d4d4d;
     font-size: 20px;
-    padding: 20px 0 20px 0;
 }
 
 .display h3 {
     padding: 0;
+}
+
+.burger-svg {
+    width: 100px;
+    margin: 10px auto;
 }
 
 .burger-form {
@@ -62,6 +67,7 @@ button {
     cursor: pointer;
     font-weight: bold;
     color: #ffffff;
+    height: 35px;
 }
 
 .display {
@@ -73,11 +79,13 @@ button {
 
 .flex-item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .not-eaten {
-    width:45%;
+    width:300px;
     /* display: inline-block; */
     box-sizing: border-box;
     border: 1px solid #dddddd;
@@ -91,6 +99,7 @@ button {
 
 .eaten {
     width:300px;
+    min-height: 150px;
     
     /* display: inline-block; */
     box-sizing: border-box;
@@ -107,10 +116,15 @@ button {
 
     .display {
         flex-direction: column;
+        width: auto;
+    }
+
+    .burger-form {
+        width: 290px;
     }
 
     .eaten {
-        width:300px;
+        width:290px;
         margin: 20px auto 0 auto;
         /* display: inline-block; */
         box-sizing: border-box;
@@ -119,7 +133,7 @@ button {
     }
 
     .not-eaten {
-        width:300px;
+        width:290px;
         /* display: inline-block; */
         margin: 0 auto;
         box-sizing: border-box;
